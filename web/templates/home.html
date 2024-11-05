@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Início{% endblock %}
+
+{% block content %}
+  <div class="container mt-5">
+    <div class="text-center">
+      <h1 class="display-4">Bem-vindo, {{ username }}!</h1>
+      <p class="lead">Você está logado e pronto para explorar a aplicação.</p>
+      <a href="{% url 'logout' %}" class="btn btn-danger btn-lg">Sair</a>
+    </div>
+
+    <hr class="my-4">
+    
+    <footer class="text-center mt-5">
+      <p class="text-muted">© 2024 Dev Edson Jr. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+{% endblock %}
